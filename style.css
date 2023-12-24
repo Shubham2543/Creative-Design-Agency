@@ -10,8 +10,19 @@ body {
   flex: 1;
 }
 
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .logo{
-  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+  object-position: top;
 }
 
 h1 {
@@ -19,7 +30,11 @@ h1 {
   font-size: 5rem;
 }
 
-.left{
+#context{
+  display: flex;
+}
+
+.left-card{
   width: 600px;
   display: inline-block;
   margin-right: 70px;
@@ -27,13 +42,23 @@ h1 {
 
 img.tile-image{
   float: left;
-  height: 200px;
+  height: 400px;
 }
 
-.right{
+.right-card{
   width: 600px;
   display: inline-block;
 }
+
+h2{
+  font-size: 3em;
+  padding: 5px;
+
+}
+
+p{
+  padding: 1em;
+} 
 
 @media (min-width: 0px) and (max-width: 900px) {
   .logo{
@@ -41,20 +66,33 @@ img.tile-image{
     display: block;
   }
   
+  #heading{
+    margin-bottom: 5em;
+  }
+
+  .logo{
+    height: 4em;
+    width: 4.5em;
+    border-radius: 50%;
+    margin-right: 2em;
+    object-fit: cover;
+    object-position: top;
+  }
+
   h1 {
-    display: inline-block;
-    font-size: 3rem;
+    display: inline;
+    font-size: 1em;
   }
   img.tile-image{
     float: none;
     height: 250px;
   }
-  .left{
+  .left-card{
     width: 20em;
     display: inline-block;
     margin-right: 70px;
   }
-  .right{
+  .right-card{
     width: 20em;
     display: inline-block;
   }
